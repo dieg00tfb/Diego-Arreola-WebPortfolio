@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="Projects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="header"></div>
+  <script>
+      fetch("header.html")
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById("header").innerHTML = data;
+          });
+  </script>
+    
+    <div class="Projects-container">
+        <div class="project-box">
+            <h1 class="title-project">Privacy Dots App</h1>
+            <p class="intro">An app that receives notifications from a motion detector and allows you to view all your devices and notifications.</p>
+            <div class="project-item">
+                <div class="iphone-container">
+                    <img src="ss-app-portrait.png" alt="app1" class="app" />
+                </div>
+            </div>
+            <p>
+                Developed the web application using React Native (Expo) <br />
+                and JavaScript to display real-time motion detection <br />
+                notifications.<br />
+                Integrated Expo’s Push Notification API to seamlessly send <br />
+                alerts from the Django server to the web application in less <br />
+                than 1 second.
+            </p>
+        </div>
+
+        <div class="project-box2">
+            <h1>World Cup Match <br /> Predictor</h1>
+            <p class='wc-desc'>
+                I developed an AI model that leverages historical data and advanced machine <br />
+                learning techniques to predict future FIFA World Cup match outcomes with an <br />
+                impressive 70% accuracy rate.
+            </p>
+            <h1 class='wc-title'>Web Scraping</h1>
+            <video loop muted autoplay class="custom-video">
+                <source src="ws-vid.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <p class='wc-desc'>
+                Utilized Python libraries Beautiful Soup and Pandas to efficiently web- <br />
+                scrape and organize comprehensive historical match data, including goals, <br />
+                player statistics, wins, and losses, ensuring accurate and well-structured <br />
+                information for analysis.
+            </p>
+            <h1 class='wc-title'>AI Model</h1>
+            <img src="wc-predictor.png" alt="wc-ss" class="predictor" />
+            <p class='wc-desc'>
+                Developed an AI model in Python using the Pandas and scikit-learn <br />
+                libraries, incorporating the Random Forest algorithm to predict match <br />
+                outcomes based on the data.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

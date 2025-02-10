@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="Home.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+    </script>
+
+    
+    <div class="home-container-page">
+        <div class="top-sec">
+            <div class="home-introduction">
+                <h1 class="home-name">About Me</h1>
+                <p class="home-descriptions">
+                    My name is Diego Arreola and I am a sophomore studying Computer Science at Louisiana Tech 
+                    University, with a strong interest in software engineering and a growing passion for <br />artificial
+                    intelligence and machine learning. I thrive in leadership roles, having successfully led teams to 
+                    achieve their goals, and I take pride in being a hard worker who consistently goes above and 
+                    beyond. Beyond my coursework, I am dedicated to continuous learning, exploring new technologies 
+                    and concepts outside the classroom to enhance my skills and stay ahead in the ever-evolving field 
+                    of computer science.
+                </p>
+                <div class="button-container">
+                    <a href="https://github.com/dieg00tfb" class="portfolio-button">Github</a>
+                    <a href="https://www.linkedin.com/in/diego-arreola-454996322" class="portfolio-button">LinkedIn</a>
+                    <a href="#contact" class="portfolio-button">318-319-7307</a>
+                    <a href="#resume" class="portfolio-button">arreoladiego524@gmail.com</a>
+                </div>
+            </div>
+            <div class="profile-picture-container">
+                <img src="pp.jpg" alt="Profile" class="profile-pic" />
+            </div>
+        </div>
+        <div class="home-dept">
+            <h1 class="skill-title">Skills</h1>
+            <div class="skill-boxes">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-node-js"></i>
+                    <h3>Node.js</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <h3>React Native</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Django</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-java"></i>
+                    <h3>Java</h3>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+</body>
+</html>
